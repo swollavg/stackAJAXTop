@@ -68,6 +68,9 @@ var showTopAnswerer = function(topic) {
 	// set users score
 	var score = result.find('.score');
 	score.text(topic.score);
+	
+	var avatar = result.find('.avatar');
+	avatar.attr('src', topic.user.profile_image);
 
 	return result;
 };
